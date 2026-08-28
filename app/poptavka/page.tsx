@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { InquiryForm } from "@/components/InquiryForm";
+export const metadata: Metadata = { title: "Nezávazná poptávka", description: "Pošlete FISPOGROUP nezávaznou poptávku na techniku, servis nebo stavební práce.", alternates: { canonical: "/poptavka" } };
+export default function Page() { return <section className="inquiry-page"><div className="inquiry-copy"><p className="eyebrow light"><span />Nezávazná poptávka</p><h1>Popište nám<br /><em>svůj požadavek.</em></h1><p>Stačí několik základních informací. Ozveme se, doplníme potřebné detaily a navrhneme další krok.</p><div><span>Raději zavoláte?</span><a href="tel:+420606657161">+420 606 657 161</a></div><small>Formulář je v této verzi v demo režimu a zatím neodesílá e-maily.</small></div><InquiryForm /></section>; }
