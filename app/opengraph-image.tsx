@@ -1,0 +1,5 @@
+import { ImageResponse } from "next/og";
+export const alt = "FISPOGROUP – Tři divize, jeden silný partner";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
+export default function Image() { return new ImageResponse(<div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", background: "#0d2028", color: "white", padding: "72px", fontFamily: "sans-serif" }}><div style={{ display: "flex", fontSize: 34, fontWeight: 800 }}>FISPO<span style={{ fontWeight: 400 }}>GROUP</span></div><div style={{ display: "flex", flexDirection: "column" }}><div style={{ display: "flex", color: "#b9ef45", fontSize: 24, textTransform: "uppercase", letterSpacing: 3 }}>Technologie · Servis · Stavební práce</div><div style={{ display: "flex", flexDirection: "column", fontSize: 86, lineHeight: 1.05, fontWeight: 700, letterSpacing: -4, marginTop: 24 }}><span>Tři divize.</span><span>Jeden silný partner.</span></div></div></div>, size); }
