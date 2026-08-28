@@ -11,6 +11,8 @@ npm run dev
 
 Produkční kontrola: `npm run build`.
 
+Projekt je propojený s Vercel; každý commit do větve `main` automaticky spustí nové produkční nasazení.
+
 ## Stránky
 
 - `/` – úvod
